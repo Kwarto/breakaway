@@ -6,8 +6,7 @@ const ShopBars = () => {
   return (
       <>
           <ShopNav />
-          <ShopSidePanel />
-          
+          <ShopSidePanel /> 
       </>
   )
 }

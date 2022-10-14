@@ -8,3 +8,5 @@ export { default as Deals } from './Deals/Deals';
 export { default as Brands } from './Brands/Brands';
 export { default as Similar } from './Similar/Similar';
 export { default as ShopContent } from './ShopContentBox/ShopContentBox';
+export { default as AddProForm } from './AddProductForm/AddProForm';
+

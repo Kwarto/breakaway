@@ -2,7 +2,7 @@ import React from 'react'
 import { FaArrowLeft, FaShoppingCart } from 'react-icons/fa'
 import { useNavigate,  useParams } from 'react-router-dom'
 import styled from 'styled-components'
-import { Footer, NavBar } from '../../components'
+import { Footer, NavBar, ProductMore } from '../../components'
 import dImg from '../../img/ip8.jpeg'
 import { Similar } from '../../sections'
 const Detail = () => {  
@@ -62,6 +62,7 @@ const Detail = () => {
          </ProAbt>
        </DetailItemDesc>
       </DetailWrapper>
+      <ProductMore />
       <Similar />
       <Footer />
     </>
@@ -74,6 +75,8 @@ const DetailWrapper = styled.section`
  display: grid;
  grid-template-columns: 40% 58%;
  gap: 2%;
+ width: 95%;
+ margin: 0 auto;
 
  @media screen and (max-width: 884px) {
    min-height: 70vh;
@@ -131,10 +134,9 @@ const SoldBy = styled.div`
 `
 
 const DetailItemDesc = styled.article`
- background: var(--main-variant);
  display: flex;
- align-items: flex-start;
- justify-content: flex-start;
+ align-items: center;
+ justify-content: center;
  padding: 10px 5%;
 
  @media screen and (max-width: 430px) {

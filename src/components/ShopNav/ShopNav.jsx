@@ -19,10 +19,10 @@ const ShopNav = () => {
                     </AWrap>
                     <AWrap onClick={() => setNotify(!notify)}>
                         <MdNotifications className='a-ico' />
-                        <span>0</span>
+                        <span>8</span>
                     </AWrap>
                     <AWrap onClick={() => setUserDrop(!userDrop)}>
-                        <img src={avaImg} alt="" />
+                        <img src={avaImg} alt="user profile" />
                     </AWrap>
                 </ActionWrap>
             </ShopNavWrapper>

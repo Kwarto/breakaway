@@ -21,16 +21,28 @@ export const CatWrap = styled.div`
 `
 
 export const CatList = styled.div`
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border-bottom: 1px solid #f1f1f1;
+ cursor: pointer;
+ transition: all 800ms ease-in-out;
+
+ &:hover{
+   background: #f1f1f1;
+   width: 100%;
+ }
  p{
     padding: 12px;
-    border-bottom: 1px solid #f1f1f1;
     font-size: 18px;
     cursor: pointer;
-    transition: all 800ms ease-in-out;
+ }
 
-    &:hover{
-      background: #f1f1f1;
-      border-bottom: 1px solid var(--text-color);
-    }
+ span{
+  background: var(--sidebar-variant);
+  color: var(--text-color);
+  padding: 2px 12px;
+  border-radius: 50px;
+  font-size: 12px;
  }
 `

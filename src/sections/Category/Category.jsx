@@ -9,6 +9,7 @@ const Category = () => {
         categoryData.map((item) => (
           <CatList key={item.id}>
             <p>{item.catName}</p>
+            <span>{item.stuCat}</span>
           </CatList>
         ))}
     </CatWrap>
