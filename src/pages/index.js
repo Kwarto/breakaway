@@ -1,0 +1,9 @@
+export { default as Home } from './Home/Home';
+export { default as Auth } from './Auth/Auth';
+export { default as NotFound } from './Error/NotFound';
+export { default as Products } from './Products/Products';
+export { default as Checkout } from './Checkout/Checkout';
+export { default as Account } from './Account/MyAccount';
+export { default as Detail } from './Detail/Detail';
+export { default as Shop } from './Shop/GetStore';
+export { default as Search } from './Search/Search';
