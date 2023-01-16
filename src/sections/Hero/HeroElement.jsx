@@ -10,7 +10,7 @@ export const HeroWrapper = styled.div`
 export const HeroContent = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 65% 33%;
+  grid-template-columns: 70% 28%;
   gap: 2%;
 `;
 
@@ -48,8 +48,19 @@ export const ImgWrap = styled.div`
 
   .txt{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2px;
+    h2{
+      color: var(--main-color);
+    }
     p{
         text-align: center;
+        font-size: 15px;
+        font-weight: 400;
     }
   }
 

@@ -18,7 +18,8 @@ const Hero = () => {
               <img src={bloc1} alt="" />
             </div>
             <div className='txt'>
-             <h3>Sell on breakaway</h3>
+              <h2>Sell on breakaway</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis enim numquam eveniet ullam vero.</p>
             </div>
           </ImgWrap>
           <ImgWrap>
@@ -26,7 +27,8 @@ const Hero = () => {
               <img src={bloc2} alt="" />
             </div>
             <div className='txt'>
-             <h3>Sell on breakaway</h3>
+              <h2>Shop with confidence</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis enim numquam eveniet ullam vero.</p>
             </div>
           </ImgWrap>
         </HeroRight>
