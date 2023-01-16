@@ -3,6 +3,7 @@ import { HeroWrapper, HeroContent, HeroSlide, HeroRight, ImgWrap } from './HeroE
 import { Category } from '../../sections'
 import banner1 from '../../img/huge.png';
 import bloc1 from '../../img/bloc1.jpg';
+import bloc2 from '../../img/bloc2.jpg';
 const Hero = () => {
   return (
     <HeroWrapper>
@@ -13,14 +14,20 @@ const Hero = () => {
         </HeroSlide>
         <HeroRight>
           <ImgWrap>
-            <div>
+            <div className='img'>
               <img src={bloc1} alt="" />
+            </div>
+            <div className='txt'>
+             <h3>Sell on breakaway</h3>
             </div>
           </ImgWrap>
           <ImgWrap>
-            <div>
-            <img src={bloc1} alt="" />
-           </div>
+          <div className='img'>
+              <img src={bloc2} alt="" />
+            </div>
+            <div className='txt'>
+             <h3>Sell on breakaway</h3>
+            </div>
           </ImgWrap>
         </HeroRight>
       </HeroContent>

@@ -22,18 +22,35 @@ export const HeroSlide = styled.div`
 export const HeroRight = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr;
+  place-content: center;
+  place-items: center;
   gap: 10px;
 `;
 
 export const ImgWrap = styled.div`
   border-radius: 10px;
   width: 100%;
-  height: 100%;
-  div {
-    width: 52%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 3px 3px 3px rgba(68, 0, 255, 0.034);
+  cursor: pointer;
+  .img {
+    text-align: center;
+    width: 100%;
     img {
-      width: 100%;
+      width: 30%;
       border-radius: 10px;
     }
   }
+
+  .txt{
+    width: 100%;
+    p{
+        text-align: center;
+    }
+  }
+
 `;
