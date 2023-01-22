@@ -11,11 +11,13 @@
 
 :root{
   --main-color: rgb(0, 128, 0);
+  --main-variant: rgba(1, 49, 1, 0.041);
   --text-color: hsl(0, 0%, 100%);
   --text-b-color: rgb(0, 0, 0);
   --btn-color: rgb(255, 196, 0);
   --text-variant: rgba(0, 0, 0, 0.829);
-  --container-lg: calc(100% - 20px);
+  --box-shadow: rgba(0, 0, 0, 0.13);
+  --container-lg: calc(100% - 15px);
 }
 
 html,body{
@@ -32,7 +34,52 @@ body{
   left: 0;
   right: 0;
   top: 0;
+  z-index: 100;
   background: var(--text-color);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.048);
-  transition: all 600ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.grid-cols-4{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 1rem;
+}
+
+.grid-cols-6{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+ }
+
+
+ @media screen and (max-width: 884px) {
+  .grid-cols-4{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-cols-6{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .grid-cols-4{
+    grid-template-columns: 1fr;
+  }
+
+  .grid-cols-6{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-fixed .search{
+    position: absolute;
+    top: 4rem;
+    left: 10px;
+    width: 94%;
+  }
+
+  .nav-fixed .search input{
+    padding: 15px 10px;
+  }
 }

@@ -1,17 +1,41 @@
 import React from 'react'
 import { HeroWrapper, HeroContent, HeroSlide, HeroRight, ImgWrap } from './HeroElement'
-import { Category } from '../../sections'
-import banner1 from '../../img/huge.png';
+import { Category, WhyShop } from '../../sections'
 import bloc1 from '../../img/bloc1.jpg';
 import bloc2 from '../../img/bloc2.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {  Autoplay, Navigation, Pagination } from 'swiper';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { heroSlideData } from '../../utils/data';
 const Hero = () => {
   return (
-    <HeroWrapper>
+    <>
+      <HeroWrapper>
       <Category />
       <HeroContent>
-        <HeroSlide>
-          <img src={banner1} alt="" />
-        </HeroSlide>
+          <Swiper modules={[Autoplay, Navigation, Pagination]}
+            navigation={true}
+            pagination={{clickable: true}}
+            spaceBetween={40}
+            slidesPerView={1}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }} className='swiper'>
+          {
+              heroSlideData && heroSlideData.map(hs => (
+                <SwiperSlide key={hs.id} className='slide'>
+                 <HeroSlide>
+                  <img src={hs.imgSrc} alt={hs.name} width={200} />
+                 </HeroSlide>
+               </SwiperSlide>
+            ))
+          }
+        </Swiper>
         <HeroRight>
           <ImgWrap>
             <div className='img'>
@@ -32,8 +56,10 @@ const Hero = () => {
             </div>
           </ImgWrap>
         </HeroRight>
-      </HeroContent>
-    </HeroWrapper>
+      </HeroContent> 
+      </HeroWrapper>
+      <WhyShop />
+    </>
   )
 }
 

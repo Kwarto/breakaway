@@ -2,17 +2,15 @@ import React, { useState } from 'react';
 import {
   MdEmail,
   MdLogin,
-  MdPhoneInTalk,
   MdShoppingBasket,
 } from 'react-icons/md';
-import { BiSupport, BiMapPin } from 'react-icons/bi';
+// import { BiSupport, BiMapPin } from 'react-icons/bi';
 import {
   NavBarWrapper,
   TopBar,
   TopList,
   MidBar,
   Logo,
-  CallUs,
   CartWrap,
 } from './NavBarElement';
 import { Search } from '../../pages';
@@ -32,20 +30,12 @@ const NavBar = () => {
       <NavBarWrapper>
         <TopBar>
           <TopList>
-            <span>
+            <span className='mail'>
               <MdEmail />
               <p>support@breakaway.com</p>
             </span>
-            <span>
-              <BiSupport />
-              <p>Help & Contact</p>
-            </span>
           </TopList>
           <TopList>
-            <span>
-              <BiMapPin />
-              <p>Store Locator</p>
-            </span>
             <span>
               <MdLogin />
               <p>Sign In</p>
@@ -59,13 +49,6 @@ const NavBar = () => {
             </h1>
           </Logo>
           <Search />
-          <CallUs>
-            <MdPhoneInTalk className="call-ico" />
-            <span>
-              <p>Call Us Now</p>
-              <p>0234 680 000</p>
-            </span>
-          </CallUs>
           <CartWrap>
             <MdShoppingBasket className="cart" />
             <small>0</small>

@@ -1,10 +1,18 @@
 import styled from "styled-components";
 
 export const CatWrap = styled.div`
- width: 23%;
+ width: 30%;
  background: var(--text-color);
  box-shadow: 0 3px 3px 3px rgba(0, 255, 106, 0.034);
  padding: 10px;
+
+ @media screen and (max-width: 884px) {
+    display: none;
+  }
+
+ @media screen and (max-width: 430px) {
+   display: none;
+ }
 
  h3{
     color: var(--text-variant);

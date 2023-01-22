@@ -1,11 +1,14 @@
 import React from 'react'
-import { Hero } from '../../sections'
+import { Hero, TopCat } from '../../sections'
+import {Products} from '../../pages'
 import styled from 'styled-components'
 
 const Home = () => {
   return (
     <HomeWrap>
       <Hero />
+      <TopCat />
+      <Products />
     </HomeWrap>
   )
 }

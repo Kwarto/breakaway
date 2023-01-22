@@ -32,6 +32,12 @@ export const TopList = styled.div`
     cursor: pointer;
     font-size: 15px;
   }
+  
+  @media screen and (max-width: 430px) {
+    .mail{
+      display: none;
+    }
+  }
 `;
 
 export const MidBar = styled.div`
@@ -40,6 +46,11 @@ export const MidBar = styled.div`
  display: flex;
  align-items: center;
  justify-content: space-between;
+
+ @media screen and (max-width: 430px) {
+  flex-direction: column;
+  min-height: 16vh;
+ }
 `;
 
 export const Logo = styled.div`
@@ -51,27 +62,33 @@ export const Logo = styled.div`
     color: var(--main-color);
    }
  }
-`
-export const CallUs = styled.div`
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 10px;
 
- .call-ico{
-  font-size: 1.8rem;
-  background: var(--btn-color);
-  border-radius: 50px;
-  padding: 3px;
- }
-
- span{
-   p{
-    font-size: 14px;
-    text-transform: uppercase;
-   }
- }
+ @media screen and (max-width: 430px) {
+    position: absolute;
+    top: 9px;
+    left: 5px;
+  }
 `
+// export const CallUs = styled.div`
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  gap: 10px;
+
+//  .call-ico{
+//   font-size: 1.8rem;
+//   background: var(--btn-color);
+//   border-radius: 50px;
+//   padding: 3px;
+//  }
+
+//  span{
+//    p{
+//     font-size: 14px;
+//     text-transform: uppercase;
+//    }
+//  }
+// `
 
 export const CartWrap = styled.div`
   display: flex;
@@ -108,5 +125,10 @@ export const CartWrap = styled.div`
         color: var(--main-color);
       }
     }
+  }
+
+  @media screen and (max-width: 430px) {
+    position: absolute;
+    right: 8px;
   }
 `

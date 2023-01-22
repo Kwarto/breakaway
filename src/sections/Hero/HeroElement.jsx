@@ -5,6 +5,14 @@ export const HeroWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+
+  @media screen and (max-width: 884px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+  }
 `;
 
 export const HeroContent = styled.div`
@@ -12,6 +20,27 @@ export const HeroContent = styled.div`
   display: grid;
   grid-template-columns: 70% 28%;
   gap: 2%;
+
+  @media screen and (max-width: 884px) {
+    grid-template-columns: 100%;
+  }
+
+  @media screen and (max-width: 430px) {
+    grid-template-columns: 100%;
+  }
+
+  .swiper{
+    width: 100%;
+   .swiper-button-next, .swiper-button-prev{
+    color: var(--btn-color);
+   }
+   .swiper-pagination-bullet{
+    background: var(--btn-color);
+    width: 13px;
+    height: 13px;
+    transform: translateY(-2rem);
+   }
+  }
 `;
 
 export const HeroSlide = styled.div`
@@ -25,6 +54,14 @@ export const HeroRight = styled.div`
   place-content: center;
   place-items: center;
   gap: 10px;
+
+  @media screen and (max-width: 884px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 430px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ImgWrap = styled.div`
@@ -44,6 +81,14 @@ export const ImgWrap = styled.div`
       width: 30%;
       border-radius: 10px;
     }
+
+    @media screen and (max-width: 884px) {
+      height: 260px;
+    }
+
+    @media screen and (max-width: 430px) {
+     height: 200px;
+    }
   }
 
   .txt{
@@ -62,6 +107,21 @@ export const ImgWrap = styled.div`
         font-size: 15px;
         font-weight: 400;
     }
+
+    @media screen and (max-width: 884px) {
+     transform: translateY(-2rem);
+    }
+    @media screen and (max-width: 430px) {
+     transform: translateY(-2rem);
+
+     p{
+      font-size: 17px;
+      max-width: 380px;
+     }
+    }
   }
 
+  @media screen and (max-width: 430px) {
+    gap: 1rem;
+  }
 `;
