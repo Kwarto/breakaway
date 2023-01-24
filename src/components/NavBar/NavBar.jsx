@@ -15,8 +15,9 @@ import {
 } from './NavBarElement';
 import { Search } from '../../pages';
 import {Cart} from '../../components';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const NavBar = () => {
+  const navigate = useNavigate();
   const [fixNav, setFixNav] = useState(false);
 
   const [isCart, setIsCart] = useState(false)
@@ -40,7 +41,7 @@ const NavBar = () => {
             </span>
           </TopList>
           <TopList>
-            <span>
+            <span onClick={() => navigate(`/auth`)}>
               <MdLogin />
               <p>Sign In</p>
             </span>

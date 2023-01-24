@@ -2,16 +2,21 @@ import React from 'react'
 import { Brands, Deals, Hero, TopCat } from '../../sections'
 import {Products} from '../../pages'
 import styled from 'styled-components'
+import { Footer, NavBar } from '../../components'
 
 const Home = () => {
   return (
-    <HomeWrap>
+    <>
+      <NavBar />
+      <HomeWrap>
       <Hero />
       <TopCat />
       <Products />
       <Deals />
       <Brands />
-    </HomeWrap>
+      </HomeWrap>
+      <Footer />
+    </>
   )
 }
 
