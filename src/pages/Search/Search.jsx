@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Search = () => {
   return (
     <SearchWrapper className='search'>
-      <input type="text" placeholder='Search products & categories here ..' />
+      <input type="text" placeholder='Search products, brands & categories here ..' />
     </SearchWrapper>
   )
 }

@@ -14,8 +14,12 @@ import {
   CartWrap,
 } from './NavBarElement';
 import { Search } from '../../pages';
+import {Cart} from '../../components';
+import { Link } from 'react-router-dom';
 const NavBar = () => {
   const [fixNav, setFixNav] = useState(false);
+
+  const [isCart, setIsCart] = useState(false)
 
   function addFix() {
     if (window.scrollY >= 130) {
@@ -43,13 +47,15 @@ const NavBar = () => {
           </TopList>
         </TopBar>
         <MidBar className={fixNav ? 'nav-fixed' : ''}>
+          <Link to={'/'}>
           <Logo>
             <h1>
               <span>Break</span>away
             </h1>
           </Logo>
+          </Link>
           <Search />
-          <CartWrap>
+          <CartWrap onClick={() => setIsCart(!isCart)}>
             <MdShoppingBasket className="cart" />
             <small>0</small>
             <span>
@@ -61,6 +67,7 @@ const NavBar = () => {
           </CartWrap>
         </MidBar>
       </NavBarWrapper>
+      {isCart && <Cart closeCart={setIsCart}/>}
     </>
   );
 };

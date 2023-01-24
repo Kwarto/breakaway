@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero, TopCat } from '../../sections'
+import { Brands, Deals, Hero, TopCat } from '../../sections'
 import {Products} from '../../pages'
 import styled from 'styled-components'
 
@@ -9,6 +9,8 @@ const Home = () => {
       <Hero />
       <TopCat />
       <Products />
+      <Deals />
+      <Brands />
     </HomeWrap>
   )
 }

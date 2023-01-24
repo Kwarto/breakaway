@@ -4,26 +4,22 @@ import { ProductList } from '../../sections'
 
 const Products = () => {
   return (
-    <ProductWrapper>
-      <h1>Available Products</h1>
-      <ProductList />
-    </ProductWrapper>
+    <>
+      <h1 style={{fontSize: '30px', fontWeight: 'bold', color: 'var(--text-variant)', paddingLeft: '25px'}}>Available Products</h1>
+      <ProductWrapper>
+        <ProductList />
+      </ProductWrapper>
+    </>
   )
 }
 
 const ProductWrapper = styled.section`
-  padding: 80px 5px;
+  padding: 20px 5px;
   background: var(--main-variant);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  h1{
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: var(--text-variant);
-  }
 `
 
 export default Products

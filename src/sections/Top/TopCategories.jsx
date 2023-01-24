@@ -3,23 +3,25 @@ import styled from 'styled-components'
 import { topCat } from '../../utils/data'
 const TopCategories = () => {
   return (
-    <TopCatWrapper>
-      <h1>Top Categories</h1>
+    <>
+      <h1 style={{fontSize: '30px', fontWeight: 'bold', color: 'var(--text-variant)', paddingLeft: '25px', paddingTop: '10px'}}>Top Categories</h1>
+      <TopCatWrapper>
         <CatItems className="grid-cols-4">            {
-              topCat && topCat.map(top => (
-                <CatList key={top.id}>
-                  <img src={top.imgSrc} alt={top.cat} />
-                  <h4>{top.cat}</h4>
-                </CatList>
-              ))
-            }
-      </CatItems>
-    </TopCatWrapper>
+          topCat && topCat.map(top => (
+            <CatList key={top.id}>
+              <img src={top.imgSrc} alt={top.cat} />
+              <h4>{top.cat}</h4>
+            </CatList>
+          ))
+        }
+        </CatItems>
+      </TopCatWrapper>
+    </>
   )
 }
 
 const TopCatWrapper = styled.div`
- padding: 70px 0;
+ padding: 70px 10px;
  h1{
   text-align: center;
   font-size: 30px;

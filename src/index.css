@@ -11,6 +11,7 @@
 
 :root{
   --main-color: rgb(0, 128, 0);
+  --main-dark: rgb(0 128 55);
   --main-variant: rgba(1, 49, 1, 0.041);
   --text-color: hsl(0, 0%, 100%);
   --text-b-color: rgb(0, 0, 0);

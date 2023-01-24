@@ -1,19 +1,19 @@
 import React from 'react';
-import { AnimatePresence } from 'framer-motion';
 import { Route, Routes } from 'react-router-dom';
-import {NavBar} from './components'
-import { Home, NotFound } from './pages';
+import {Footer, NavBar} from './components'
+import { Checkout, Detail, Home, NotFound } from './pages';
 
 const App = () => {
   return (
     <>
-      <AnimatePresence>
         <NavBar />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/detail/:id" element={<Detail />} />
+          <Route exact path="/checkout" element={<Checkout />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </AnimatePresence>
+        <Footer />
     </>
   );
 };

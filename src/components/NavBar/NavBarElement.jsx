@@ -57,9 +57,9 @@ export const Logo = styled.div`
  cursor: pointer;
  h1{
    font-size: 2rem;
-
+   color: var(--text-b-color);
    span{
-    color: var(--main-color);
+    color: var(--main-dark);
    }
  }
 
@@ -94,6 +94,7 @@ export const CartWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   .cart{
     font-size: 1.8rem;
