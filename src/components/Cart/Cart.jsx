@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { MdAdd, MdArrowBack, MdClearAll, } from 'react-icons/md'
+import { MdArrowBack, MdClearAll, } from 'react-icons/md'
 import { FaMinus, FaPlus } from 'react-icons/fa'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
@@ -13,7 +13,7 @@ const Cart = ({closeCart}) => {
       <CartHeader>
         <h4>{ isItemCart ? 'Available Cart' : 'Empty Cart' }</h4>
         {isItemCart ? 
-          <button>
+          <button onClick={() => setIsItemCart(false)}>
           Clear
           <MdClearAll />
         </button> :
