@@ -8,7 +8,6 @@ const ProductList = () => {
       <ProductCard />
       <ProductCard />
       <ProductCard />
-      <ProductCard />
     </ProductListWrapper>
   )
 }

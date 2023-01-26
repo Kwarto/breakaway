@@ -41,6 +41,17 @@ body{
   transition: all 200ms ease-in-out;
 }
 
+.slid-in{
+  transform: translateX(-4rem);
+  transition: all 2s ease;
+  overflow-x: hidden;
+}
+.slid-out{
+  transform: translateX(0);
+  transition: all 2s ease;
+  overflow-x: hidden;
+}
+
 .grid-cols-4{
  display: grid;
  grid-template-columns: repeat(4, 1fr);
@@ -61,6 +72,16 @@ body{
 
   .grid-cols-6{
     grid-template-columns: repeat(3, 1fr);
+  }
+  .slid-in{
+    transform: translateX(0);
+    transition: all 2s ease;
+    overflow-x: hidden;
+  }
+  .slid-out{
+    transform: translateX(0);
+    transition: all 2s ease;
+    overflow-x: hidden;
   }
 }
 

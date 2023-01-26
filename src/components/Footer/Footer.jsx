@@ -86,6 +86,11 @@ const FooterItem = styled.div`
   color: var(--text-b-color);
   padding: 8px;
 
+  h1{
+    color: var(--text-variant);
+    font-size: 30px;
+  }
+
   span{
       margin: 12px 0;
       h3{
@@ -101,6 +106,12 @@ const FooterItem = styled.div`
     li{
       padding: 8px 0;
       font-size: 18px;
+      cursor: pointer;
+      transition: all 2s ease-in-out;
+
+      &:hover{
+         color: var(--text-variant);
+      }
     }
   }
 

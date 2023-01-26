@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
-import { AuthWrapper, LeftWrapper, RightWrapper } from './AuthElement'
+import { ErrorMsg, AuthWrapper, LeftWrapper, RightWrapper } from './AuthElement'
 import bg from '../../img/auth1.svg'
 import { FaFacebook, FaGoogle } from 'react-icons/fa';
 const Auth = () => {
   const [signUp, setSignUp] = useState(false);
   return (
-    <AuthWrapper>
+    <>
+      <ErrorMsg>
+        <p>Invalid email or password</p>
+      </ErrorMsg>
+      <AuthWrapper>
       <LeftWrapper>
         <img src={bg} alt="" />
       </LeftWrapper>
-      <RightWrapper>
+      <RightWrapper className={signUp ? 'slid-in' : 'slid-out'}>
         <div className='top-d'>
           <h1>Get's Started</h1>
           {
@@ -64,6 +68,7 @@ const Auth = () => {
         </div>
       </RightWrapper>
     </AuthWrapper>
+    </>
   )
 }
 

@@ -32,7 +32,7 @@ const Cart = ({closeCart}) => {
               <img src={item1} alt='item-1' />
               <div className='abt'>
                 <h3>Macbook Air 13Pro</h3>
-                <p>$150</p>
+                  <p>$ 120</p>
               </div>
               <div>
               <span>
@@ -163,6 +163,7 @@ const ItemWrap = styled.div`
       display: flex;
       align-items: center;
       button{
+        cursor: pointer;
         font-size: 20px;
         font-weight: 700;
         padding: 5px;

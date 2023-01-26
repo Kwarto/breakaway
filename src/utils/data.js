@@ -116,3 +116,61 @@ export const productData = [
         price: 90
     }
 ]
+
+export const brandData = [
+    {
+        id: 1,
+        proName: 'Apple',
+        imgSrc: pro2,
+    },
+    {
+        id: 2,
+        proName: 'Microsoft',
+        imgSrc: pro2,
+    },
+    {
+        id: 3,
+        proName: 'Samsung',
+        imgSrc: pro2,
+    },
+    {
+        id: 4,
+        proName: 'Huawei',
+        imgSrc: pro2,
+    },
+    {
+        id: 5,
+        proName: 'Media',
+        imgSrc: pro2,
+    },
+    {
+        id: 6,
+        proName: 'Nasco',
+        imgSrc: pro2,
+    },
+    {
+        id: 7,
+        proName: 'Nokia',
+        imgSrc: pro2,
+    },
+    {
+        id: 8,
+        proName: 'HP',
+        imgSrc: pro2,
+    },
+    {
+        id: 9,
+        proName: 'Infinix',
+        imgSrc: pro2,
+    },
+    {
+        id: 10,
+        proName: 'MSI',
+        imgSrc: pro2,
+    },
+    {
+        id: 11,
+        proName: 'Tecno',
+        imgSrc: pro2,
+    },
+]

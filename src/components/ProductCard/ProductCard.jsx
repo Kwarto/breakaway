@@ -10,10 +10,10 @@ const ProductCard = () => {
     <>
       {
         productData && productData.map(pro => (
-          <Link to={`/detail/${pro.id}`}>
-            <ProductCardWrapper key={pro.id}>
+          <Link to={`/detail/${pro.id}`} key={pro.id}>
+            <ProductCardWrapper>
               <ProImg>
-                <img src={pro.imgSrc} alt={pro.proName} />
+                <img src={pro.imgSrc} alt={pro.proName} loading='lazy' />
               </ProImg>
               <ProAbt>
                 <h3>{pro.proName}</h3>

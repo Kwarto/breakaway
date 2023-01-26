@@ -1,5 +1,19 @@
 import styled from "styled-components";
 
+export const ErrorMsg = styled.div`
+  width: 35%;
+  background: red;
+  border-radius: .1rem;
+  box-shadow: 0 1rem .5rem var(--main-variant);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  p{
+    text-align: center;
+  }
+`
+
 export const AuthWrapper = styled.section`
  min-height: 100vh;
  display: grid;
