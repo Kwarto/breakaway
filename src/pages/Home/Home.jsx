@@ -2,7 +2,7 @@ import React from 'react'
 import { Brands, Deals, Hero, TopCat } from '../../sections'
 import {Products} from '../../pages'
 import styled from 'styled-components'
-import { Footer, NavBar } from '../../components'
+import { NavBar, Footer } from '../../components'
 
 const Home = () => {
   return (

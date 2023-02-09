@@ -31,7 +31,7 @@ const Auth = () => {
             </div>
             <div className="w-a">
               <FaFacebook className='w-ico' />
-              <p>Sign Up With Google</p>
+              <p>Sign Up With Facebook</p>
             </div>
           </div>
           <h3>OR</h3>

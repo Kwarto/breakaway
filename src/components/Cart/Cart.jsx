@@ -35,14 +35,16 @@ const Cart = ({closeCart}) => {
                   <p>$ 120</p>
               </div>
               <div>
-              <span>
-                  <button>
-                  <FaMinus />
-                </button>
-                <button>
-                  <FaPlus />
-                </button>
-              </span>
+              <select>
+              {[...Array(10).keys(),].map(number => {
+                const num = number + 1;
+                return (
+                  <option value={num} key={num}>
+                    {num}
+                  </option>
+                )
+               })}
+              </select>
               </div>
               </ItemWrap>
             </> :
@@ -159,16 +161,10 @@ const ItemWrap = styled.div`
     display: flex;
     align-items: center;
     gap: 5px;
-    span{
-      display: flex;
-      align-items: center;
-      button{
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: 700;
-        padding: 5px;
-        background: none;
-      }
+    select{
+      padding: 5px;
+      width: 50px;
+      background: var(--text-color);
     }
   }
 `
